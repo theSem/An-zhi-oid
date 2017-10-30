@@ -19,6 +19,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -28,21 +29,38 @@ public class MainActivity extends AppCompatActivity {
 
         // Set the content of the activity to use the activity_main.xml layout file
         setContentView(R.layout.activity_main);
-    }
 
-    public void openNumbersList(View view){
-        Intent i = new Intent(this, NumbersActivity.class);
-        startActivity(i);
-    }
+        TextView numbers = (TextView)findViewById(R.id.numbers);
+        TextView family = (TextView)findViewById(R.id.family);
+        TextView colors = (TextView)findViewById(R.id.colors);
+        TextView phrases = (TextView)findViewById(R.id.phrases);
 
-    public void openFamilyList(View view){
-    }
+        numbers.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,NumbersActivity.class));
+            }
+        });
 
-    public void openColorsList(View view){
-        setContentView(R.layout.activity_color);
-    }
+        family.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                startActivity(new Intent(MainActivity.this,FamilyActivity.class));
+            }
+        });
 
-    public void openPhrasesList(View view){
-        setContentView(R.layout.activity_phrases);
+        colors.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                startActivity(new Intent(MainActivity.this,ColorsActivity.class));
+            }
+        });
+
+        phrases.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view){
+                startActivity(new Intent(MainActivity.this,PhrasesActivity.class));
+            }
+        });
     }
 }
