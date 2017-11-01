@@ -1,7 +1,7 @@
-Miwok App
+An-zhi-oid
 ===================================
 
-This app displays lists of vocabulary words for the user to learn the Miwok language.
+An app teaching some basics of Mandarin.
 Used in a Udacity course in the Beginning Android Nanodegree.
 
 Pre-requisites
