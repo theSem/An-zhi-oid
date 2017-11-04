@@ -17,20 +17,20 @@ public class ColorsActivity extends AppCompatActivity {
         //Create an arrayList containing words for lesson
         ArrayList<Word> words = new ArrayList<Word>();
         words.addAll(Arrays.asList(
-                new Word("green","绿色"),
-                new Word("yellow","黄色"),
-                new Word("blue","蓝色"),
-                new Word("red","红色"),
-                new Word("gold","金色"),
-                new Word("black","黑色"),
-                new Word("white","白色"),
-                new Word("brown","棕色"),
-                new Word("orange","橙色"),
-                new Word("color","颜色")
+                new Word("green","绿色",R.drawable.color_green),
+                new Word("yellow","黄色",R.drawable.color_mustard_yellow),
+                new Word("blue","蓝色",R.drawable.color_blue),
+                new Word("red","红色",R.drawable.color_red),
+                new Word("gold","金色",R.drawable.color_gold),
+                new Word("black","黑色",R.drawable.color_black),
+                new Word("white","白色",R.drawable.color_white),
+                new Word("brown","棕色",R.drawable.color_brown),
+                new Word("orange","橙色",R.drawable.color_orange),
+                new Word("color","颜色",R.drawable.color_rainbow)
         ));
 
         //Add the strings from words to layout
-        WordAdapter itemsAdapter = new WordAdapter(this, words);
+        WordAdapter itemsAdapter = new WordAdapter(this, words, R.color.category_colors);
 
         ListView listView = (ListView) findViewById(R.id.list);
 
