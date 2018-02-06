@@ -17,14 +17,16 @@
     <string name="app_name">An-zhi-oid</string>
 
     <!-- Category name for phrases [CHAR LIMIT=20] -->
-    <string name="category_phrases">Phrases</string>
+    <string name="rules_one">The Game</string>
 
-    <!-- Category name for the vocabulary words for colors [CHAR LIMIT=20] -->
-    <string name="category_colors">Colors</string>
+    <!-- Category name for the vocabulrulesords for colors [CHAR LIMIT=20] -->
+    <string name="rules_two">Courts and Equipment</string>
 
-    <!-- Category name for the vocabulary words for numbers [CHAR LIMIT=20] -->
-    <string name="category_numbers">Numbers</string>
+    <!-- Category name for the vocabulrulesords for numbers [CHAR LIMIT=20] -->
+    <string name="rules_three">Officials and Officiating</string>
 
-    <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
-    <string name="category_family">Family Members</string>
+    <!-- Category name for the vocabulrulesords for family members [CHAR LIMIT=20] -->
+    <string name="rules_four">Play Regulations</string>
+
+    <string name="rules_five">USHA Tournaments</string>
 </resources>

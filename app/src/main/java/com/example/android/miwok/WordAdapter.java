@@ -6,7 +6,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -15,18 +14,18 @@ import java.util.ArrayList;
  * Created by whatt on 10/30/2017.
  */
 
-public class WordAdapter extends ArrayAdapter<Word> {
+public class WordAdapter extends ArrayAdapter<Part> {
 
     private int mColorResourceId;
 
     /**
      * Custom constructor
      * @param context       The current context
-     * @param words         List of Word objects to display in list
+     * @param parts         List of Part objects to display in list
      */
 
-    public WordAdapter(Activity context, ArrayList<Word> words, int colorResourceId){
-        super(context,0,words);
+    public WordAdapter(Activity context, ArrayList<Part> parts, int colorResourceId){
+        super(context,0, parts);
         mColorResourceId = colorResourceId;
     }
 
@@ -40,28 +39,21 @@ public class WordAdapter extends ArrayAdapter<Word> {
      */
     @Override
     public View getView(int position, View convertView, ViewGroup parent){
-
+/*
         View listItemView = convertView;
 
         if (listItemView == null){
             listItemView = LayoutInflater.from(getContext()).inflate(R.layout.list_item,parent,false);
         }
 
-        Word currentWord = getItem(position);
+        Part currentPart = getItem(position);
 
         TextView defaultTranslation = (TextView) listItemView.findViewById(R.id.default_text_view);
-        defaultTranslation.setText(currentWord.getDefaultTranslation());
+        defaultTranslation.setText(currentPart.getTitle());
 
         TextView translation = (TextView) listItemView.findViewById(R.id.miwok_text_view);
-        translation.setText(currentWord.getOtherTranslation());
+        translation.setText(currentPart.getContents());
 
-        if (currentWord.hasPicture()){
-            ImageView imgView = (ImageView) listItemView.findViewById(R.id.imageView);
-            imgView.setImageResource(currentWord.getWordPic());
-        } else {
-            ImageView imgView = (ImageView) listItemView.findViewById(R.id.imageView);
-            imgView.setVisibility(View.GONE);
-        }
 
         View textContainer = listItemView.findViewById(R.id.text_container);
 
@@ -70,5 +62,7 @@ public class WordAdapter extends ArrayAdapter<Word> {
         textContainer.setBackgroundColor(color);
 
         return listItemView;
+        */
+        return null;
     }
 }
